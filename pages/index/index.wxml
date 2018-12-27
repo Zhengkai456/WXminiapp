@@ -1,0 +1,11 @@
+<view class="container">
+  <text id="index_text_welcome">{{index_text_welcome}}</text>
+  <view class="main">
+    <view id="index_image1">
+      <image bindtap="bindViewTap" src="{{index_image}}" mode="cover"></image>
+    </view>
+    
+    <text id="index_text_main1" >{{index_text_main}}</text>
+    <button type="button" bindtap="index_function_button">{{index_button}}</button>
+  </view>
+</view>

@@ -1,0 +1,3 @@
+.border_input{
+  border:1px solid #ccc;
+}

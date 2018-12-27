@@ -1,0 +1,43 @@
+<view class="container">
+  <view id="baoming_welcome">
+    <text id="baoming_text_welcome">快来报名社联鸭!!\nSicunStudio欢迎你!!</text>
+
+    <view>
+      <image bindtap="changepic" src="{{baoming_image}}" mode="cover"></image>
+    </view>
+  </view>
+
+  <view id="baoming_form">
+    <form bindsubmit="baoming_function_submit">
+      <view id="baoming_form_name">
+        <text class="baoming_form_text">1.你的名字是？</text>
+        <input class="border_input" name="user_name" placeholder="请输入你的名字" />
+      </view>
+
+      <view id="baoming_form_number">
+        <text class="baoming_form_text">2.你的学号是？</text>
+        <input class="border_input" name="user_number" placeholder="请输入你的学号" />
+      </view>
+
+      <view id="baoming_form_dormitory">
+        <text class="baoming_form_text">3.你的联系方式？</text>
+        <input class="border_input" name="user_phone" placeholder='请输入你的联系方式'/>
+      </view>
+
+      <view id="baoming_form_wish">
+        <text class="baoming_form_text">4.你的志愿部门是？</text>
+        <picker value="{{index}}" name="user_will" range="{{will_range}}" bindchange="PickerChange">
+          <view id="baoming_form_wish_picker">
+            当前选择：{{will_range[index]}}
+          </view>
+        </picker>
+      </view>
+
+      <view id="baoming_form_submit">
+      <button type="primary" form-type='submit'>提交</button>
+      </view>
+
+    </form>
+  </view>
+
+</view >
